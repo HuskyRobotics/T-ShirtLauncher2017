@@ -4,8 +4,8 @@ import edu.wpi.first.wpilibj.SampleRobot;
 
 public class Robot extends SampleRobot {
 	
-	int driveLPort = 0;
-	int driveRPort = 1;
+	int driveLPort = 8;
+	int driveRPort = 9;
 	int cannonTriggerPort = 0;
 	int climbPort = 2;
 	

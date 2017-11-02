@@ -23,14 +23,14 @@ public class TankDrive {
 	}
 
 	public void arcadeDrive(double magX, double magY) { // x is rotation, y is forward/back
-		magX = applyDeadzone(magX, deadX);
-		magY = applyDeadzone(magY, deadY);
-
-		// magX = applyCoeff(magX, coeffX);
-		// magY = applyCoeff(magY, coeffY);
-
-		magX = applyScale(magX, scaleX);
-		magY = applyScale(magY, scaleY);
+//		magX = applyDeadzone(magX, deadX);
+//		magY = applyDeadzone(magY, deadY);
+//
+//		// magX = applyCoeff(magX, coeffX);
+//		// magY = applyCoeff(magY, coeffY);
+//
+//		magX = applyScale(magX, scaleX);
+//		magY = applyScale(magY, scaleY);
 
 		chassis.arcadeDrive(magY, magX);
 	}
