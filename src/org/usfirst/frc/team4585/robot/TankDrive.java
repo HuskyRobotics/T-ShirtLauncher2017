@@ -10,7 +10,7 @@ public class TankDrive {
 
 	private double coeffX = .75;
 	private double coeffY = .75;
-	private double scaleX = 3;
+	private double scaleX = 1;
 	private double scaleY = 2;
 	private double deadX = .10;
 	private double deadY = .10;
@@ -23,15 +23,15 @@ public class TankDrive {
 	}
 
 	public void arcadeDrive(double magX, double magY) { // x is rotation, y is forward/back
-//		magX = applyDeadzone(magX, deadX);
-//		magY = applyDeadzone(magY, deadY);
+		magX = applyDeadzone(magX, deadX);
+		magY = applyDeadzone(magY, deadY);
 //
 //		// magX = applyCoeff(magX, coeffX);
 //		// magY = applyCoeff(magY, coeffY);
 //
-//		magX = applyScale(magX, scaleX);
-//		magY = applyScale(magY, scaleY);
-
+		magX = applyScale(magX, scaleX);
+		magY = applyScale(magY, scaleY);
+ 
 		chassis.arcadeDrive(magY, magX);
 	}
 
